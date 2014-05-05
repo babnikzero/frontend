@@ -14,6 +14,8 @@
         </div><!-- end nav -->
 
         @yield('content')
+         
     </div><!-- end container -->
+    <div>Exec time : {{microtime(true) - LARAVEL_START }}</div>
 </body>
 </html>

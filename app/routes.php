@@ -16,7 +16,9 @@ Route::get('/', function()
 	
 	return View::make('hello');
 });
-
+Route::get('time', function (){
+	return var_dump(LARAVEL_START);
+});
 Route::get('users',array('as' => 'users', 'uses' => 'UserController@show_users')); //function ($id) {
 Route::get('goods/{id}',array('as' => 'goods', 'uses' => 'GoodsController@show_goods'));
 //Route::get('auth/{user}/{pass}', 'UserApiController@getAuth');

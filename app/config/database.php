@@ -74,6 +74,18 @@ return array(
 			'prefix'   => '',
 			'schema'   => 'public',
 		),
+		
+		'production' => array(
+			'driver'   => 'pgsql',
+			'port'     =>'5433',
+			'host'     => '192.168.55.77',
+			'database' => 'frontendprj',
+			'username' => 'frontendprj',
+			'password' => 'testpasswd',
+			'charset'  => 'SQL_ASCII',
+			'prefix'   => '',
+			'schema'   => 'public',
+		),
 
 		'sqlsrv' => array(
 			'driver'   => 'sqlsrv',
@@ -110,16 +122,6 @@ return array(
 	|
 	*/
 
-	'redis' => array(
 
-		'cluster' => false,
-
-		'default' => array(
-			'host'     => '127.0.0.1',
-			'port'     => 6379,
-			'database' => 0,
-		),
-
-	),
 
 );
